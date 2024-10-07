@@ -6,6 +6,9 @@ import java.util.List;
 public class ListSorter {
     public void sort(List<String> sourceList) {
         ListComparator comparator = new ListComparator();
+
+        sourceList.sort(comparator);
+        System.out.println(sourceList);
     }
 }
 
