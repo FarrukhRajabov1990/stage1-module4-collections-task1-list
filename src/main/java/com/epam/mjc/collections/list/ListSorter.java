@@ -15,6 +15,8 @@ public class ListSorter {
 class ListComparator implements Comparator<String> {
     @Override
     public int compare(String a, String b) {
-        return a.compareTo(b);
+        int a2 = 5*Integer.parseInt(a)^2 + 3;
+        int b2 = 5*Integer.parseInt(b)^2 + 3;
+        return (String.valueOf(a2)).compareTo(String.valueOf(b2));
     }
 }
